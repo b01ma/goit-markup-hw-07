@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
+</head>
+
+<body>
+<!-- Хедер веб сайта -->
+<header class="header">
+    <div class="header container">
+        <a class="link logo logo-header" href="./index.html">Web<span class="logo-span link">Studio</span></a>
+
+        <!-- Навигация  -->
+        <nav class="nav">
+            <ul class="nav-list list">
+                <li class="nav-list-item">
+                    <a class="link" href="./index.html">Студия</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="link current-page" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Контакты -->
+        <div class="nav-contacts">
+            <ul class="contact-list list">
+                <li class="cont-list-item">
+                    <a class="link contact-link" href="">
+                        <svg class="icon-mail" width="16" height="12">
+                            <use href="./images/icon-sprite.svg#iconEnvelop"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="cont-list-item">
+                    <a class="link contact-link" href="">
+                        <svg class="icon-phone" width="10" height="16">
+                            <use href="./images/icon-sprite.svg#iconsmartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+    <!-- Основной контент сайта -->
+    <main>
+
+        <!-- Примеры работ и фильтр-->
+        <section class="portfolio section" >
+            <div class="container">
+                <h1 class="visually-hidden">Примеры наших работ</h1>
+                
+                <!-- Фильтр проэктов -->
+                <ul class="portfolio-list list">
+                    <li class="list-item">
+                        <button class="portfolio-btn" type="button">Все</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="portfolio-btn" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="portfolio-btn" type="button">Приложения</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="portfolio-btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="portfolio-btn" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            </div>
+        <!-- Картинки примеров проэктов в портфолио -->
+        <div class="projects container">
+            <ul class="projects-list list">
+                <li class="list-item" >
+                   <a class="portf-link" href="./index.html">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject1.jpg" alt="Веб-сайт Технокряк" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                        цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Texнокряк</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </div>
+                   </a>
+                    
+                </li>
+                <li class="list-item">
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject2.jpg" alt="Дизайн Постера Нового Орлеана против Голбен Стар"
+                                    width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                        цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Постер New Orlean vs Golden Star</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+                <li class="list-item" >
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject3.jpg" alt="Приложение Ресторана Сифуб" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                        цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Ресторан Seafood</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+        
+                <li class="list-item" >
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject4.jpg" alt="Маркетинг Проекта Прайм" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                        цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Проект Prime</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+                <li class="list-item" >
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject5.jpg" alt="Приложение проэкта коробок" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ut quaerat! Odit deserunt dolor
+                                        dolores obcaecati impedit odio architecto velit, nulla mollitia unde fugit animi nihil itaque eveniet,
+                                        iste modi!
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Проект Boxes</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+                <li class="list-item" >
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject6.jpg" alt="Веб-сайт компании вдохновение не имеет границ"
+                                    width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquam sapiente sequi ducimus
+                                        dignissimos nulla, inventore excepturi, reprehenderit dolores consequuntur adipisci odio. Dignissimos
+                                        optio eius hic iste praesentium perspiciatis, fugit nam, architecto doloremque ea error, ratione a nemo
+                                        cumque minus.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Inspiration has no Borders</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+                <li class="list-item" >
+                   <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject7.jpg" alt="Дизайн издания Лимитед Эдишн" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, accusamus? Minus consectetur ducimus sed
+                                        laboriosam enim, quisquam odio autem dignissimos!
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Издание Limited Edition</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </div>
+                   </a>
+                    
+                    
+                </li>
+                <li class="list-item" >
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject8.jpg" alt="Маркетинг проэкта ЛАБ" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                        цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Проект LAB</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+                <li class="list-item" >
+                    <a href="" class="portf-link">
+                        <div class="card">
+                            <div class="thumb-img">
+                                <img class="image" src="./images/portfolioProject9.jpg" alt="Приложение компании Растущий бизнес" width="370">
+                                <div class="card-disc">
+                                    <p>
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                        цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="list-content">
+                                <h2>Growing Business</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                </li>
+            </ul>
+        </div>
+        
+
+        </section>
+
+    </main>
+
+<!-- Подвал веб сайта -->
+<footer class="footer section">
+    <div class="container">
+        <div class="footer-roll">
+            <!-- Лого и адрсес -->
+            <div class="adrs-container">
+                <a class="link logo" href="./index.html">Web<span class="logo-span link">Studio</span></a>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    </li>
+                    <li class="list-item">
+                        <a class="link footer-contacts" href="">info@example.com</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="link footer-contacts" href="">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ссылки на соц сети -->
+            <div class="link-container">
+                <h2>Присоидиняйтесь</h2>
+                <ul class="footer-cont-list">
+                    <li class="footer-contact-item">
+                        <a href="" class="footer-icon-link">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconInstagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a href="" class="footer-icon-link">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconTwitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a href="" class="footer-icon-link">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconFacebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a href="" class="footer-icon-link">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icon-sprite.svg#iconLinkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Форма подписки -->
+            <div class="subscribe">
+                <b>Подпишитесь на рассылку</b>
+                <div class="subscribe-input">
+                    <input class="subscribe-field" type="email" name="email" placeholder="Email" class="colortext">
+                    <button class="subs-btn" type="submit">Подписаться</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</body>
+
+</body>
+</html>

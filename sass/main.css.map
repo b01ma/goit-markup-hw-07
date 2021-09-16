@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "components/_card-team.scss",
+        "components/_footer.scss",
+        "components/_form-contact.scss",
+        "components/_form-subscribe.scss",
+        "components/_header.scss",
+        "components/_links-social.scss",
+        "components/_logo.scss",
+        "components/_modal-window.scss",
+        "components/_backdrop.scss",
+        "components/_section-about.scss",
+        "components/_section-advantages.scss",
+        "components/_section-clients.scss",
+        "components/_section-hero.scss",
+        "components/_section-team.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
