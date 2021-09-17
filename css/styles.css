@@ -109,6 +109,12 @@ body {
 
   border-bottom: 1px solid #ececec;
 }
+
+.icon-mail,
+.icon-phone {
+  display: flex;
+}
+
 .icon-mail,
 .icon-phone {
   fill: currentColor;
@@ -140,11 +146,6 @@ header .logo-span {
 
 .nav-contacts {
   margin-left: auto;
-}
-
-.icon-mail,
-.icon-phone {
-  display: flex;
 }
 
 .contact-link {
