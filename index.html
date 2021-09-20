@@ -39,14 +39,14 @@
                 <ul class="nav__list">
                     <li class="nav__item contancts__item">
                         <a href="#" class="link nav__link nav__link--grey contacts__link">
-                            <svg class="nav__icons" width="16" height="12">
+                            <svg class="contacts__icons" width="16" height="12">
                                 <use href="./images/icon-sprite.svg#iconEnvelop"></use>
                             </svg>
                             info@devstudio.com</a>
                     </li>
                     <li class="link nav__item contacts-item">
                         <a href="#" class="link nav__link nav__link--grey contacts__link">
-                            <svg class="nav__icons" width="10" height="16">
+                            <svg class="contacts__icons" width="10" height="16">
                                 <use href="./images/icon-sprite.svg#iconsmartphone"></use>
                             </svg>
                             +38 096 111 11 11</a>
@@ -69,7 +69,7 @@
                 <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
 
                 <!-- Modal window -->
-                <div class="backdrop backdrop--hidden">
+                <div class="backdrop is-hidden" data-modal>
                     <div class="modal-window">
                         <button class="modal-window__button" data-modal-close>
                             <svg class="modal-window__icon" width="11" height="11">
@@ -111,7 +111,7 @@
                             <div class="checkbox">
                                 <input class="checkbox__input" type="checkbox" value="policy" name="policy" id="policy">
                                 <label class="checkbox__label" for="policy">Соглашаюсь с рассылкой и принимаю
-                                    <a href="#">Условия договора</a>
+                                    <a class="checkbox__link" href="#">Условия договора</a>
                                 </label>
                             </div> 
                             
@@ -124,7 +124,7 @@
         </section>
 
         <!-- Section ADVANTAGES -->
-        <section class="advantages">
+        <section class="advantages section">
             <div class="container-centered">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="advantages__list">
@@ -140,7 +140,7 @@
                         <h3 class="advantages__heading" >Планирование</h3>
                         <p class="advantages__text" >Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="aadvantages__item">
+                    <li class="advantages__item">
                         <h3 class="advantages__heading" >Современные технологии</h3>
                         <p class="advantages__text" >Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -470,6 +470,7 @@
         </div>
     </footer>
     </main>
+    <script src="./js/modal.js"></script>
    
 
     

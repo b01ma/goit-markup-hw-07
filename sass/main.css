@@ -16,6 +16,17 @@
   padding-bottom: 94px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -51,6 +62,124 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
+}
+
+.form__button--submit, .hero__button {
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color;
+}
+
+.form__input:focus, .form__input:active {
+  border-color: #2196f3;
+}
+
+.form__input:focus + .form__icon,
+.form__input:active + .form__icon {
+  fill: #2196f3;
+}
+
+.form__icon {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  transform: translateY(50%);
+  transition: fill;
+}
+
+.form__textarea {
+  resize: none;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color;
+}
+
+.form__textarea:active {
+  color: #2196f3;
+}
+
+.checkbox {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox__link {
+  color: #2196f3;
+}
+
+.checkbox__input {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__label {
+  display: inline-block;
+}
+
+.checkbox__label::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  content: " ";
+  height: 15px;
+  width: 16px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  background-image: url(../images/iconCheck.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  border: transparent;
+}
+
+.form__button--submit {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .header {
@@ -110,7 +239,7 @@ ul {
   margin-left: auto;
 }
 
-.nav__icons {
+.contacts__icons {
   display: flex;
   fill: currentColor;
   margin-right: 10px;
@@ -161,5 +290,172 @@ ul {
 
 .logo--white {
   color: #ffffff;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  box-sizing: border-box;
+  min-width: 528px;
+  min-height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.modal-window__icon {
+  fill: #000000;
+}
+
+.modal-window__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.modal-window__button:hover .modal-window__icon {
+  fill: #2196f3;
+}
+
+.modal-window__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  transform-origin: top;
+  transform: translatey(0);
+  transition: opacity;
+  transition: transform;
+}
+
+.is-hidden {
+  opacity: 1;
+  transform: scaley(0);
+  transform: translatey(-100%);
+  pointer-events: none;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  display: inline-block;
+  width: 270px;
+  margin-right: 30px;
+}
+
+.advantages__item:last-child {
+  margin-right: 0;
+}
+
+.advantages__item::before {
+  background-color: cyan;
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages__item:nth-child(1)::before {
+  background-image: url(../images/iconAntenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item:nth-child(2)::before {
+  background-image: url(../images/iconClock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item:nth-child(3)::before {
+  background-image: url(../images/iconDiagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item:nth-child(4)::before {
+  background-image: url(../images/iconAstronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__heading {
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/herobanner.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__heading {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: block;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero__button {
+  display: block;
+  padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*# sourceMappingURL=main.css.map */
