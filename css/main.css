@@ -298,6 +298,8 @@ ul {
 }
 
 .checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   position: absolute;
 }
@@ -612,6 +614,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.clients__heading {
+  margin-bottom: 50px;
 }
 
 .clients__list {
