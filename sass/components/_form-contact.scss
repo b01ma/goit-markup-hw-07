@@ -79,6 +79,14 @@
   appearance: none;
 
   position: absolute;
+
+  &:checked + .checkbox__label::after {
+    background-image: url(../images/iconCheck.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    border: transparent;
+  }
 }
 .checkbox__label {
   display: inline-block;
@@ -101,14 +109,6 @@
 
     box-sizing: border-box;
   }
-}
-
-.checkbox__input:checked + .checkbox__label::after {
-  background-image: url(../images/iconCheck.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
-  border: transparent;
 }
 
 .form__button--submit {

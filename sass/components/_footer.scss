@@ -8,8 +8,10 @@
   justify-content: space-between;
 }
 
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__address {
@@ -46,9 +48,12 @@
   display: flex;
 }
 
-.footer-links__item:not(:last-child) {
-  margin-right: 10px;
+.footer-links__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
+
 .footer-links__link {
   @include social-link__set($bg-color-footer-icon, $btn-text-color);
 

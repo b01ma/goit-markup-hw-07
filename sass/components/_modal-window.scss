@@ -41,10 +41,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
-}
 
-.modal-window__button:hover .modal-window__icon {
-  fill: $text-color-accent;
+  &:hover .modal-window__icon {
+    fill: $text-color-accent;
+  }
 }
 
 .modal-window__text {

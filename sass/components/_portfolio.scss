@@ -9,6 +9,12 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
   }
+
+  &:hover .card__content--hover,
+  &:focus .card__content--hover {
+    transform: translateY(0%);
+    transform: scale(1);
+  }
 }
 
 .portfolio__list {
@@ -18,8 +24,10 @@
   margin-bottom: 50px;
 }
 
-.portfolio__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .portfolio__btn {
@@ -106,12 +114,6 @@
   letter-spacing: 0.03em;
 
   color: #ffffff;
-}
-
-.portfolio__link:hover .card__content--hover,
-.portfolio__link:focus .card__content--hover {
-  transform: translateY(0%);
-  transform: scale(1);
 }
 
 .card-heading {
